@@ -34,7 +34,7 @@ Future<List<Pokemon>> fetchPokemonPage({int limit = 20, int offset = 0}) async {
     final futures = results.map((r) => fetchPokemonDetail(r['url'])).toList();
     return Future.wait(futures);
 }
-
+```
 
 ## 📂 Estrutura do Projeto
 O código segue uma arquitetura modular:
@@ -45,19 +45,19 @@ lib/
 ├── pages/          # Telas da aplicação (HomePage, DetailsPage)
 ├── services/       # Comunicação com a API (PokeApiService)
 └── widgets/        # Componentes de UI
-
+```
 ## 📦 Como Rodar
 1. Clone o repositório:
 ```bash
 git clone https://github.com/allanyvictoria/pokedex-flutter
-cd pokedex_flutter
-
+cd pokedex_flutter 
+```
 2. Instale as dependências:
 ```bash
 flutter pub get
-
+```
 3. Execute o projeto:
 ```bash
 flutter run
-
+```
 Desenvolvido por Allany Victória Santos Araújo.
